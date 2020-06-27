@@ -1,0 +1,24 @@
+#search_bar{
+    display: inline-flex;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 45px;
+    border-radius: 25px;
+    font-size: 15px;
+    outline-width: 0;
+    text-indent: 30px;
+    
+}
+#search_bar::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    padding-left: 3px;
+ }
+ #search_bar::-moz-placeholder { /* Firefox 19+ */
+    padding-left: 20px;
+ }
+ #search_bar:-ms-input-placeholder { /* IE 10+ */
+    padding-left: 20px;
+ }
+ #search_bar:-moz-placeholder { /* Firefox 18- */
+    padding-left: 20px;
+ }

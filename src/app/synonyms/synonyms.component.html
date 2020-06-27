@@ -1,0 +1,17 @@
+<div *ngIf ="validstate == 1" id="container">
+<h2>Synonyms</h2>
+<table>
+    <thead>
+        <th>Synonym</th>
+        <th>Definition</th>
+        <th>Type</th>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let syno of finalSynList ">
+            <td>{{syno.syn}}</td>
+            <td>{{syno.def}}</td>
+            <td>{{syno.type}}</td>
+        </tr>
+    </tbody>
+</table>
+</div>

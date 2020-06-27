@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component ,OnInit} from '@angular/core';
+import{Services} from './services/services'
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'simple-thesaurus';
+  constructor(private services: Services) { }
+  title = 'Thesurus';
+  word;
+
+  onInit(){
+    this.services.currentWord.subscribe(word => {
+      this.word = word;
+      console.log(word)
+    });
+  }
 }

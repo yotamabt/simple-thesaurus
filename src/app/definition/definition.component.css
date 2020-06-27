@@ -1,0 +1,19 @@
+#container{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+h2{
+  color: #A569BD ;
+}
+h3{
+    color:#3498DB;
+}
+#error_message{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    color : #E74C3C;
+    font-size: 20px;
+    font-weight: bold;
+}

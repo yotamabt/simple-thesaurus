@@ -1,0 +1,10 @@
+<div *ngIf ="validstate == 1" id ="container">
+<h2>Definitions</h2>
+<h3>Word: {{word}}</h3>
+
+<ul>
+<li *ngFor = "let def of defs" >{{def}}</li>
+</ul>
+
+</div>
+<div *ngIf ="(validstate == 2 || validstate == 0) && !isFirstWord()"  id="error_message">Empty Or Invalid Entry!</div>
